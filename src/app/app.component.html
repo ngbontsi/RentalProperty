@@ -1,0 +1,21 @@
+﻿<!-- nav -->
+
+
+
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': user }">
+
+  <app-nav *ngIf="user"></app-nav>
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+    <p class="term-text">
+        We will process your data as set forth in our <a href="#">Terms &amp; Conditions</a>
+    </p>
+    <p style="display:none;">
+        <a href="#" target="_top">NB Development</a>
+    </p>
+</div>
